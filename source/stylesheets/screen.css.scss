@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-@import url("//fonts.googleapis.com/css?family=Open+Sans:400,600,700");
-@import url("//fonts.googleapis.com/css?family=Raleway:300,500,700");
+@import url("//fonts.useso.com/css?family=Open+Sans:400,600,700");
+@import url("//fonts.useso.com/css?family=Raleway:300,500,700");
 
 @import 'normalize';
 // @import 'variables'; revert to tripit defaults
@@ -455,6 +455,7 @@ html, body {
     background-color: rgba($code-bg, .05);
     padding: 3px;
     border-radius: $border-radius;
+    font-size: 14px;
     @extend %break-words;
     @extend %code-font;
   }
@@ -608,14 +609,14 @@ html, body {
   padding: 1px $nav-v-padding;
 
   @extend %label-font;
-    border-radius: 3px;
+  border-radius: 3px;
 }
 .highlight .c, .highlight .cm, .highlight .c1, .highlight .cs {
   color: #909090;
 }
 
 .highlight, .highlight .w {
-  background-color: $code-bg;
+  background-color: transparent;
 }
 
 .faux-toc-link {
