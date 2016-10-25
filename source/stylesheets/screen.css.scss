@@ -1,7 +1,7 @@
 @charset "utf-8";
 
-@import url("//fonts.useso.com/css?family=Open+Sans:400,600,700");
-@import url("//fonts.useso.com/css?family=Raleway:300,500,700");
+// @import url("//fonts.useso.com/css?family=Open+Sans:400,600,700");
+// @import url("//fonts.useso.com/css?family=Raleway:300,500,700");
 
 @import 'normalize';
 // @import 'variables'; revert to tripit defaults
@@ -464,6 +464,7 @@ html, body {
   pre>code {
     background-color: transparent;
     padding: 0;
+    color: #ccc;
   }
 
   aside {
@@ -538,11 +539,25 @@ html, body {
   }
 
   blockquote {
+    clear: both;
     &>p {
       background-color: rgba($code-bg, 0.3);
       border-radius: $border-radius;
       padding: $code-annotation-padding;
       color: $base-grey-10;
+    }
+
+    div:first-child {
+      background: #0a97c1;
+      float: left;
+      padding: 5px 10px;
+      font-weight: bold;
+    }
+
+    div:last-child {
+      float: left;
+      padding: 5px 10px;
+      background: #2d3033;
     }
   }
 }
